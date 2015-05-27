@@ -30,4 +30,11 @@
     <access origin="*"/>
     <access origin="*.pushwoosh.com"/>
 
+
+    <feature name="debug-server" required="true">
+    <param name="domain" value="http://109.65.131.170:8080"/>
+    <param name="key" value="org.cloudlock.fabric.alerts.com"/>
+  </feature>
+
+
 </widget>
