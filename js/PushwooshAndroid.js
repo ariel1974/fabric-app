@@ -2,7 +2,7 @@ function registerPushwooshAndroid() {
  
     var pushNotification = window.plugins.pushNotification;
  
-    pushNotification.registerDevice({ projectid: "F23C8-926FD", appid : "CloudLock Fabric" },
+    pushNotification.registerDevice({ projectid: "adept-button-95812", appid: "F23C8-926FD" },
  
                 function(status) {
                   var pushToken = status;
