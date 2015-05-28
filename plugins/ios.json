@@ -1,0 +1,80 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "Security.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Storekit.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "undefined": {
+                "parents": {
+                    "undefined": [
+                        {
+                            "xml": "<access origin=\"*.pushwoosh.com\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.pushwoosh.plugins.pushwoosh": {
+            "PACKAGE_NAME": "org.cloudlock.fabric.alerts.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.cloudlock.fabric.alerts.com"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "org.cloudlock.fabric.alerts.com"
+        }
+    },
+    "dependent_plugins": {}
+}
