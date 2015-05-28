@@ -36,6 +36,7 @@ function initPushwoosh() {
 var app = {
     // Application Constructor
     initialize: function() {
+        alert('init');
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -43,6 +44,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        alert('bindEvents');
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -50,11 +52,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        alert('onDeviceReady');
         app.receivedEvent('deviceready');
         initPushwoosh();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        alert('receivedEvent');
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
