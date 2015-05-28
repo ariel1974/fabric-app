@@ -36,7 +36,6 @@ function initPushwoosh() {
 var app = {
     // Application Constructor
     initialize: function() {
-        alert('init');
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -44,7 +43,6 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        alert('bindEvents');
         document.addEventListener('deviceready', this.onDeviceReady, true);
     },
     // deviceready Event Handler
